@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>徽腾的本地网站</title>
+    <link rel="stylesheet" href="_00.css">  
+    <script src="01.js"></script>
+</head>
+<body>
+    <div class="bg-img">
+        <div class="content">
+            <header>小记</header>
+            <form action="#">
+                <div class="field">
+                  <span ></span>
+                  <input type="text" required placeholder="女朋友的备注">
+                </div>
+                <div class="field space">
+                  <span ></span>
+                  <input type="password" class="pass-key" required placeholder="在一起的年月日">
+                </div>
+                <div class="pass">
+                  <a href="#">不可能会忘记密码</a>
+                </div>
+                <div class= "field">
+                  <input type="submit" value="登录  ">
+                </div>
+            </form>
+              <div class="login">小心心给你
+                <a href="#" style="color: cyan;">进入</a>
+              </div>
+              <div class="links">
+                <div class="ddf">
+                      <span>其他登录方式（点了没用的）</span>
+                </div>
+               
+              </div>
+              <div class="signup">
+                  只有一个账号，没法注册哦
+              </div>
+    </div>
+    <script>
+         var x = document.getElementsByClassName("field")
+    var CD=x[0].firstElementChild.nextElementSibling 
+    console.log(CD.value)
+    var XX=x[1].firstElementChild.nextElementSibling
+    console.log(XX.value)
+    var btn=x[2]
+    btn.addEventListener('click', function(){
+   if(CD.value === "臭猪猪"&&XX.value==="20180821"){
+     window.location = "_01.html"
+   }
+   else{
+     alert('大佬们勿扰哈')
+   }
+  });
+    </script>
+   
+</body>
+</html>

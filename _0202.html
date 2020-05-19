@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图像墙</title>
+    <link rel="stylesheet" href="_02.css">  
+</head>
+<style>
+    
+        .back{
+        background: url('bg22.jpg');
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+            }
+     
+       .content214{
+        position: absolute;
+        top: 85%;
+        left: 85%;
+        z-index: 999;
+        text-align: center;
+        
+        height: 70px;
+        width: 140px;
+        transform: translate(-50%,-50%);
+        background: rgba(255,255,255,0.04);
+        box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+       }
+</style>
+<body>
+    <div class="back"> 
+        <div class="content211">
+            <div style="padding-top: 13%; font-size: 25px ; color:white ;  border-radius: 15px;">
+                back
+            </div>
+        </div>
+        <div class="content212">
+            <ul>
+                <!-- <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li> -->
+            </ul>
+        </div>
+        <div class="content213">
+            <!-- <ul> -->
+                <!-- <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li> -->
+            <!-- </ul> -->
+            <img src="心形.jpg" style=" padding-top: 80px; height: 471px; width: 650px;">
+        </div>
+        <div class="content214">
+            <div style="padding-top: 13%; font-size: 25px ; color:white ;  border-radius: 15px;">
+                next
+            </div>
+    </div>
+    <script>
+        var x1=document.getElementsByClassName("content211")
+         x1[0].onclick = function (){
+            window.history.back()
+        }
+    </script>
+</body>
+</html>
